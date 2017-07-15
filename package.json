@@ -10,18 +10,27 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
+        "com.hutchind.cordova.plugins.streamingmedia": "~0.1.4",
+        "com.moust.cordova.videoplayer": "~1.0.1",
         "cordova-android": "^6.2.3",
-        "cordova-browser": "^4.1.0",
         "cordova-ios": "^4.4.0",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-file": "^4.3.3",
+        "cordova-plugin-streaming-media": "^1.0.2",
+        "cordova-plugin-tts": "^0.2.3",
+        "cordova-plugin-video-player": "^1.0.1",
         "cordova-plugin-whitelist": "^1.3.2"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-tts": {},
+            "com.moust.cordova.videoplayer": {},
+            "com.hutchind.cordova.plugins.streamingmedia": {},
+            "cordova-plugin-file": {}
         },
         "platforms": [
             "android",
-            "browser",
             "ios"
         ]
     }

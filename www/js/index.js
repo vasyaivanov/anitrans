@@ -16,12 +16,30 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+var KEY_UNAME = "username";
+var KEY_UPASS = "password";
+
 var app = {
     // Application Constructor
     initialize: function() {
-        $('#clickMe').on('click', function () {
-            alert ("Gaf");
+
+        $('#demo').on('click', function () {
+            if (localStorage.getItem (KEY_UNAME) && localStorage.getItem (KEY_UPASS)){
+                window.location = "third_page.html";
+            } else {
+                window.location = "second_page.html";
+            }
         });
+        $('#back').on('click', function () {
+            window.location = "index.html";
+        });
+
+        $('#deleteUser').on('click', function () {
+            localStorage.setItem (KEY_UNAME, "");
+            localStorage.setItem (KEY_UPASS, "")
+        });
+
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
@@ -35,13 +53,6 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
         console.log('Received Event: ' + id);
     }
 };

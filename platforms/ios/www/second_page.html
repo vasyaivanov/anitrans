@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Friends</title>
+    </head>
+    <body>
+        <div class="app_login">
+            <!--<h1>page 2</h1>-->
+            <a id="back" href="#" class="previous">&laquo; Back</a>
+            <a id="skip" href="#" class="next">Skip &raquo;</a>
+            <!--<a id="back" href="#" class="previous round">&laquo;</a>-->
+            <div id="loginContainer" class="login_container">
+                <label for="fname">User Name</label>
+                <input id="username" type="text" placeholder="Max" ></br>
+                <label for="fpass">Password</label>
+                <input id="password" type="password" placeholder="********"></br>
+                <label for="ftype">Animal Type</label></br>
+                <select id="anymal" type="text" placeholder="Dog"></br>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                </select></br>
+                <!--<label for="fsex">Sex</label></br>
+                <select id="sex" type="text" placeholder="Sex"></br>
+                    <option value="male">Male</option>
+                    <option value="female">Femail</option>-->
+                <!--</select></br>-->
+                <label for="fage">Age</label></br>
+                <select id="age" type="text" placeholder="Age"></br>
+                    <option value="1"> 1 year</option>
+                    <option value="2">2 years</option>
+                </select></br>
+                <!--<button id="login" class="loginButton"type="text">Login</button>-->
+                <button id="login" class="button button4">Login</button>
+               <!--<div id="loginContainer" class="loginBack">
+                <button id="login" type="text">Login</button>
+                </div>-->
+            </div>
+        </div>
+
+        
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="js/second_page.js"></script>
+    </body>
+</html>
