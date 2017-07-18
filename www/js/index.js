@@ -26,9 +26,9 @@ var app = {
 
         $('#demo').on('click', function () {
             if (localStorage.getItem (KEY_UNAME) && localStorage.getItem (KEY_UPASS)){
-                window.location = "third_page.html";
+                window.location = "third_page_1.html";
             } else {
-                window.location = "second_page.html";
+                window.location = "third_page_1.html";
             }
         });
         $('#back').on('click', function () {

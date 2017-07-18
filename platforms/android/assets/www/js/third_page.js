@@ -34,6 +34,18 @@ var app = {
         $('#back').on('click', function () {
             window.location = "index.html";
         });
+        $('#card1').on('click', function () {
+            window.location = "fourth_page.html";
+        });
+        $('#card2').on('click', function () {
+            window.location = "fourth_page.html";
+        });
+        $('#card3').on('click', function () {
+            window.location = "fourth_page.html";
+        });
+        $('#card4').on('click', function () {
+            window.location = "second_page.html";
+        });
         $('#skip').on('click', function () {
             window.location = "fourth_page.html";
         });

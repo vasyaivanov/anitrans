@@ -28,18 +28,38 @@ function addChar()
             
             if ( parseInt( $cover.css('width') ) < width )
             {
-                setTimeout(addChar, 100);
+                        addChar
+                document.getElementById('content12').value += signature
             }
         }
+        var str = "I want to protect you. I can sense when you're in a bad mood. I need more exercise! I'm scared you won't come back. I can tell when you're not feeling well. Pay attention when I'm not myself. I need a routine, but with a little variety. Be clear when I'm doing something wrong. I'm not a human.";
+                function addVal(){
+                    for (var i = 0, len = str.length; i < len; i++) {
+                        (function(i){
+                        window.setTimeout(function(){
+                        var textarea = document.getElementById('content12');
+                        textarea.value += str[i]
+                        textarea.scrollTop = textarea.scrollHeight;
+                        }, i * 75);
 
+                    }(i));
+                    }
+                    // document.getElementById('content12').value = str[i]
+                    }
+
+                //  document.getElementById('content12').value = signature
+                
 var app = {
     
     initialize: function() {
         $('#back').on('click', function () {
             window.location = "index.html";
         });
+        $('#btnClick').on('click', function () {
+            addVal();
+        });
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        setTimeout(function() { addChar(); }, 2000);
+        setTimeout(function() { addVal(); }, 2000);
     },
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
@@ -50,9 +70,9 @@ var app = {
         // $('#video_dog').bind('autoplay', f);
    function f() {
             TTS.speak({
-                        text: 'I am hungry, give me food!',
+                        text: str,
                         locale: 'en-GB',
-                        rate: 1.2
+                        rate: 1.5
                     // }, 
                     // function () {
                     //     // alrt('success');

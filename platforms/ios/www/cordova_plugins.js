@@ -1,11 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "cordova-plugin-tts.tts",
-        "file": "plugins/cordova-plugin-tts/www/tts.js",
-        "pluginId": "cordova-plugin-tts",
+        "id": "com.hutchind.cordova.plugins.streamingmedia.StreamingMedia",
+        "file": "plugins/com.hutchind.cordova.plugins.streamingmedia/www/StreamingMedia.js",
+        "pluginId": "com.hutchind.cordova.plugins.streamingmedia",
         "clobbers": [
-            "TTS"
+            "streamingMedia"
         ]
     },
     {
@@ -14,14 +14,6 @@ module.exports = [
         "pluginId": "com.moust.cordova.videoplayer",
         "clobbers": [
             "VideoPlayer"
-        ]
-    },
-    {
-        "id": "com.hutchind.cordova.plugins.streamingmedia.StreamingMedia",
-        "file": "plugins/com.hutchind.cordova.plugins.streamingmedia/www/StreamingMedia.js",
-        "pluginId": "com.hutchind.cordova.plugins.streamingmedia",
-        "clobbers": [
-            "streamingMedia"
         ]
     },
     {
@@ -196,17 +188,25 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-tts.tts",
+        "file": "plugins/cordova-plugin-tts/www/tts.js",
+        "pluginId": "cordova-plugin-tts",
+        "clobbers": [
+            "TTS"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.3.2",
-    "cordova-plugin-tts": "0.2.3",
-    "com.moust.cordova.videoplayer": "1.0.1",
     "com.hutchind.cordova.plugins.streamingmedia": "0.1.4",
+    "com.moust.cordova.videoplayer": "1.0.1",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-file": "4.3.3"
+    "cordova-plugin-file": "4.3.3",
+    "cordova-plugin-tts": "0.2.3",
+    "cordova-plugin-whitelist": "1.3.2"
 };
 // BOTTOM OF METADATA
 });

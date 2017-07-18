@@ -45,7 +45,6 @@ body {
     text-transform:uppercase;
     width:100%;
 }
-
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -139,6 +138,9 @@ h1 {
 label[type=text] {
     font-size: 250%;
 }
+
+
+
 input[type=text], [type=password] {
     /*margin-left: 80px;
     margin-right: 0px;*/
@@ -182,10 +184,9 @@ select[type=text]{
     margin-left: 3%;
     /*margin-right: 5%;*/
     font-size: 200%;
-    /*-webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);*/
 }
+
+
 
 .loginButton{
     height: 10%;
@@ -273,6 +274,131 @@ select[type=text]{
     text-decoration: none;
     text-shadow: rgb(21, 112, 205) 0px 1px 0px;
 }
+
+/*label#lGarfield{
+    text-align: center;
+    position: absolute;
+    top: 11%;
+    /*left: 8%;*/
+    /*font-size: 200%;*/
+/*}*/
+label#lGoofy{
+    position: absolute;
+    text-align: center;
+    top: 11%;
+    /*right: 8%;*/
+    font-size: 200%;
+}
+label#lSnoopy{
+    /*margin: auto;*/
+    text-align: center;
+    position: absolute;
+    bottom: 38%;
+    /*left: 8%;*/
+    font-size: 200%;
+}
+label#ladd_pet{
+    text-align: center;
+    position: absolute;
+    bottom: 38%;
+    /*left: 50%;*/
+    font-size: 200%;
+}
+.button5#Garfield {
+    line-height: 0;
+    /*text-align: ice;*/
+     /*padding-left:6px;*/
+    padding-top: 1px;
+    /*padding:1px;*/
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    height:35%;
+    width:45%;
+}
+.button5#Goofy {
+    position: absolute;
+    top: 8px;
+    right: 0%;
+    height:35%;
+    width:45%;
+}
+.button5#Snoopy {
+    position: absolute;
+    
+    left: 0px;
+    bottom: 8px;
+        height:35%;
+    width:45%;
+}
+
+/*.button6 {
+    position: absolute;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 10%;
+    font-size: 150%;
+    height:25%;
+    width:35%;
+    text-shadow: 1px 2px #888888;
+    background: linear-gradient(rgb(61, 148, 246) 5%, rgb(30, 98, 208) 100%) rgb(61, 148, 246);
+    border-radius: 6px; border: 1px solid rgb(51, 127, 237);
+    display: inline-block; cursor: pointer; color: rgb(255, 255, 255);
+    font-family: Arial;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    text-decoration: none;
+    text-shadow: rgb(21, 112, 205) 0px 1px 0px;
+}*/
+/*.button#add_pet {
+    margin-top: 5%;
+    position: relative;
+    display: inline-flex;  
+    margin-left: 0%;
+    margin-top: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 350%;
+    height:25%;
+    width:35%;
+    background: linear-gradient(rgb(61, 148, 246) 5%, rgb(30, 98, 208) 100%) rgb(61, 148, 246);
+    border-radius: 6px;
+    border: 1px solid rgb(51, 127, 237);
+    color: rgb(255, 255, 255);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    text-decoration: none;
+    text-shadow: rgb(21, 112, 205) 0px 1px 0px; 
+    line-height: 1; 
+    letter-spacing: 2%;
+    font-stretch: 100%;
+    -webkit-text-size-adjust: 200%;
+     line-height: 200%;
+    text-align: center;
+}*/
+/*.button_plus {
+    position: relative;
+    display: inline-flex;  
+
+    margin-left: 0%;
+    margin-top: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 550%;
+    height:25%;
+    width:35%;
+    background: linear-gradient(rgb(61, 148, 246) 5%, rgb(30, 98, 208) 100%) rgb(61, 148, 246);
+    border-radius: 6px;
+    border: 1px solid rgb(51, 127, 237);
+    display: inline-table;
+    color: rgb(255, 255, 255);
+    background-position: right bottom;
+    background-repeat: no-repeat, repeat;
+    padding: 0px;
+    text-decoration: none;
+    text-shadow: rgb(21, 112, 205) 0px 1px 0px;
+    line-height: 0.1;*/
+/*}*/
 .button5:hover {background-color: #e7e7e7;}
 .pass_user{
     margin-top: 10%;
@@ -472,4 +598,122 @@ p {
     position: absolute;
     top: 0;
     right: 0;
+}
+.box_container {
+    height: 80%;
+    width: 96%;
+    margin: auto;
+    margin-top: 5%;
+    position: relative;
+    text-transform: none;
+    /*text-align: center;*/
+    /*line-height: 0.1;*/
+}
+.all_pets {
+    font-size: 200%;
+    display: block;    
+    /*text-align: center;*/
+    font-family: Arial;
+    text-transform: none;
+}
+.card1 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    transition: 0.3s;
+    top: 10%;
+    left: 0%;
+    width: 45%;
+    border-radius: 6px; 
+    border: 2px solid rgb(61, 148, 246);
+    background-color: rgb(61, 148, 246);
+    font-size: 200%;
+}
+label#garfield {
+    background-color: rgb(61, 148, 246)
+}
+.card2 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    transition: 0.3s;
+    top: 10%;
+    right: 0%;
+    width: 45%;
+    border-radius: 6px; 
+    border: 2px solid rgb(61, 148, 246);
+    background-color: rgb(61, 148, 246);
+    font-size: 200%;
+}
+label#goofy {
+    background-color: rgb(61, 148, 246)
+}
+.card3 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    transition: 0.3s;
+    top: 55%;
+    left: 0%;
+    width: 45%;
+    border-radius: 6px; 
+    border: 2px solid rgb(61, 148, 246);
+    background-color: rgb(61, 148, 246);
+    font-size: 200%;
+}
+label#snoopy {
+    background-color: rgb(61, 148, 246)
+}
+.card4 {
+    /* Add shadows to create the "card" effect */
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    align-content: center;
+    position: absolute;
+    transition: 0.3s;
+    height: 41%;
+    top: 55%;
+    right: 0%;
+    width: 45%;
+    border-radius: 6px; 
+    border: 2px solid rgb(61, 148, 246);
+    background-color: rgb(61, 148, 246);
+    font-size: 200%;
+    vertical-align: middle
+}
+label#add_pet {
+    background-color: rgb(61, 148, 246);
+    font-size: 100%;
+
+}
+img {
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgb(61, 148, 246);
+}
+/*img#add_pet{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    right: 5%;
+}*/
+
+/* Add some padding inside the card container */
+.container_garfield {
+    padding: 2px 16px;
+    background-color: rgb(61, 148, 246);
+}
+hr {
+      margin-top: 50px;
+}
+.button5#add_pet {
+    position: absolute;
+    font-size: 1000%;
+    height:32%;
+    top: 50%;
+    right: 5%;
+    /*left: 55%;*/
+    width: 40%;
+    margin-top: 0%;
+    background: rgb(61, 148, 246);
+    /*letter-spacing: -30px;*/
 }

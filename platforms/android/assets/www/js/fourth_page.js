@@ -18,91 +18,32 @@
  * under the License.
  */
 
-var KEY_UNAME = "username";
-var KEY_UPASS = "password";
+
 
 var app = {
-
     // Application Constructor
     initialize: function() {
-        // var vid = document.getElementById('video')
-        // vid.setAttribute("playsinline", "");
-        // vid.setAttribute('webkit-playsinline', '');
-        // console.log ("ON LOAD username: " + localStorage.getItem (KEY_UNAME) + ";password: " + localStorage.getItem (KEY_UPASS));
-
-        // var uname = localStorage.getItem (KEY_UNAME);
-        // $('#displayUsername').text("Are you " + uname + " ?");
-
         $('#back').on('click', function () {
-            // VideoPlayer.play
-            VideoPlayer.play("file:///Test/www/video.mp4");
-            // window.location = "index.html";
-            // window.plugins.tts.speak("The TTS service is ready", win, fail); 
-            // TTS
-            // .speak({
-            // text: 'I am hungry, give me food!',
-            // locale: 'en-GB',
-            // rate: 1.5
-        // }, function () {
-        //     alert('success');
-        // }, function (reason) {
-        //     alert(reason);
+            window.location = "index.html";
         });
-        // }, false);
-        //  $('#video').on('click', function () {
-        //     window.location = "index.html";
-        // });
-        // $('#skip').on('click', function () {
-        //     window.location = "fourth_page.html";
-        // });
-        // $('#login').on('click', function () {
-
-        //     var upass = $('#password').val();
-        //     console.log ("ON LOGIN password: " + upass);
-
-        //     if (upass !== localStorage.getItem (KEY_UPASS)){
-        //         $('#wrongPassword').attr("style", "visibility: visible");
-        //     } else {
-        //         $('#wrongPassword').attr("style", "visibility: hidden");
-        //         window.location = "fourth_page.html";
-        //     }
-
-        // });
-
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-//         document.addEventListener('deviceready', function () {
-//     // basic usage
-//     // TTS
-//     //     .speak('I am hungry, give me food!', function () {
-//     //         // alert('success');
-//     //     }, function (reason) {
-//     //         alert(reason);
-//     //     });
-    
-//     // or with more options
-//     TTS
-//         .speak({
-//             text: 'I am hungry, give me food!',
-//             locale: 'en-GB',
-//             rate: 1.5
-//         // }, function () {
-//         //     alert('success');
-//         // }, function (reason) {
-//         //     alert(reason);
-//         });
-// }, false);
-
-
-},
-
-    // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
+        document.addEventListener('deviceready', function () {
+            TTS
+                .speak({
+                    text: 'I am hungry, give me food!',
+                    locale: 'en-GB',
+                    rate: 1.5
+                // }, function () {
+                //     alert('success');
+                // }, function (reason) {
+                //     alert(reason);
+                });
+        }, false);
+    },
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
     },
-
+    
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         console.log('Received Event: ' + id);

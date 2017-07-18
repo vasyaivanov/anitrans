@@ -7,19 +7,19 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-plugin-tts": {
+        "com.hutchind.cordova.plugins.streamingmedia": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "com.moust.cordova.videoplayer": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "com.hutchind.cordova.plugins.streamingmedia": {
+        "cordova-plugin-file": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "cordova-plugin-file": {
+        "cordova-plugin-tts": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
